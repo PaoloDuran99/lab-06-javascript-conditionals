@@ -4,11 +4,29 @@
 			<script>
 // your JavaScript goes here!
 			var number = prompt("Please enter a four digit number");
-			var thouMod = num%1000; // = 3456
-			var thou = num - thouMod; // 
-			var thouReal = thou/1000; //
+			
+			console.log ("original number = " + number);
 
+			var thouMod = number%1000; // = thousands place
+			var thou = number - thouMod; // 
+			var thouReal = thou/1000; //
 			console.log (thouReal + " thousands");
+
+			var hundMod = thouMod%100; //hundreds place
+			var hund = thouMod - hundMod;
+			var hundReal = hund/100; 
+			console.log (hundReal + " hundreds")
+
+			var tenMod = hundMod%10;
+			var ten = hundMod - tenMod;
+			var tenReal = ten/10;
+			console.log(tenReal + " tens")
+
+			var oneMod = tenMod%1
+			var one = tenMod - oneMod;
+			var oneReal = one/1
+			console.log(oneReal + " ones")
+
 			</script>
 		</body>
 	</html>
